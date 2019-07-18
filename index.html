@@ -75,7 +75,7 @@
     var next = function next() {
         fx.setText(phrases[counter]).then(function () {
             //Тут в МИЛИСЕКУНДАХ указываем скорость смены текста после вывода
-            setTimeout(next, 1000);
+            setTimeout(next, 1500);
         });
         counter = (counter + 1) % phrases.length;
     };
