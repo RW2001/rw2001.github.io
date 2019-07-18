@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ТРЯСИ БЛЯ!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style type="text/css">
+        /* Стили вынес в основной файл т.к иначе Prefixfree не будет работать на локалке */
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100&subset=cyrillic');
+
+        html,
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background: #212121;
+            height: 100%;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .text {
+            font-weight: 100;
+            font-size: 28px;
+            color: #fafafa;
+        }
+
+        .lite-ad {
+            font-weight: 100;
+            font-size: 28px;
+            color: #fafafa;
+        }
+
+        .dud {
+            color: #757575;
+        }
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="text"></div>
+</div>
+
+<!-- Удалите эти 2 строчки, что бы отрубить музон -->
+<iframe width="0" height="0" src="media/google-bypass.mp4" frameborder="0" allow="autoplay"></iframe>
+<audio autoplay loop src="media/yop.mp4"></audio>
+
+<script src="js/jquery.js"></script>
+<script src="js/bypass.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript">
+    //Думаю понятно, что это...
+    var phrases = [
+        'Ты тряси, тряси смартфон приготовил МегаФон.',
+        'Персональные подарки ты тряси тряси смартфон.',
+        'Потряси скорей смартфон в приложенье МегаФон. ',
+        'Год бесплатной быстрой связи ты тряси, тряси смартфон.',
+        'Потряси скорей смартфон с приложеньем МегаФон.',
+        'Просто так смартфон получишь, чтобы трясти трясти смартфон. ',
+        'Чёт, хуйня какая то.'];
+
+
+    //Тут вместо класса text можете указать свой
+    var el = document.querySelector('.text');
+    var fx = new TextScramble(el);
+
+    var counter = 0;
+    var next = function next() {
+        fx.setText(phrases[counter]).then(function () {
+            //Тут в МИЛИСЕКУНДАХ указываем скорость смены текста после вывода
+            setTimeout(next, 1000);
+        });
+        counter = (counter + 1) % phrases.length;
+    };
+
+    next();
+</script>
+
+<!-- Script modify by Lantos -->
+<!-- Russification by Lantos -->
+<!-- Беспалевная реклама торрент поисковика https://magnetit.xyz -->
+</body>
+</html>
