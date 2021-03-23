@@ -17,7 +17,7 @@ var option_hero_background_kenburns_transition="slideDown";
 var option_hero_background_kenburns_transitionDuration=800;
 var option_hero_background_youtube_url="https://www.youtube.com/watch?v=QJs1dr0XNZY";
 var option_hero_background_youtube_startPoint=0;
-var option_hero_background_youtube_endPoint=9000;
+var option_hero_background_youtube_endPoint=160;
 var option_hero_background_youtube_mute="off";
 var option_hero_background_youtube_loop="on";
 var option_hero_background_youtube_controls="on";
