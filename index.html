@@ -1,90 +1,103 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>ТРЯСИ БЛЯ!</title>
+﻿<!doctype html>
+<html lang="en">
+  <head>
+  
+      <meta charset="utf-8">
+      <meta name="robots" content="noodp">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	  
+      <title>DOOMSHOP</title>
+	  
+      <link rel="shortcut icon" href="favicon.ico">
+	  <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">	
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:300,400" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <style type="text/css">
-        /* Стили вынес в основной файл т.к иначе Prefixfree не будет работать на локалке */
-        @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100&subset=cyrillic');
+      <link rel="stylesheet" type="text/css" href="assets\css\plugins.css">
+      <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+      
+  </head>
 
-        html,
-        body {
-            font-family: 'Roboto Mono', monospace;
-            background: #212121;
-            height: 100%;
-        }
+  <body>
 
-        .container {
-            height: 100%;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
+      <div id="main">
 
-        .text {
-            font-weight: 100;
-            font-size: 28px;
-            color: #fafafa;
-        }
+		  <div id="page-loader">
+			  <div class="spinner-container">
+				  <div class="css-spinner"></div>
+			  </div>
+		  </div>
+            
+		  <section id="hero" class="hero hero-1">
+		  
+		  	<div class="rainbowline"></div>
 
-        .lite-ad {
-            font-weight: 100;
-            font-size: 28px;
-            color: #fafafa;
-        }
-
-        .dud {
-            color: #757575;
-        }
-
-    </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-</head>
-<body>
-<div class="container">
-    <div class="text"></div>
-</div>
-
-<!-- Удалите эти 2 строчки, что бы отрубить музон -->
-<iframe width="0" height="0" src="media/google-bypass.mp4" frameborder="0" allow="autoplay"></iframe>
-<audio autoplay loop src="media/yop.mp4"></audio>
-
-<script src="js/jquery.js"></script>
-<script src="js/bypass.js"></script>
-<script src="js/index.js"></script>
-<script type="text/javascript">
-    //Думаю понятно, что это...
-    var phrases = [
-        'Ты тряси, тряси смартфон приготовил МегаФон.',
-        'Персональные подарки ты тряси тряси смартфон.',
-        'Потряси скорей смартфон в приложенье МегаФон. ',
-        'Год бесплатной быстрой связи ты тряси, тряси смартфон.',
-        'Потряси скорей смартфон с приложеньем МегаФон.',
-        'Просто так смартфон получишь, чтобы трясти трясти смартфон. ',
-        'Чёт, хуйня какая то.'];
+			  <div class="front-content page-enter-animated">
+			  
+				<div class="controls show"></div>
+			
+				  <div class="container-mid">
+				  
+					  <div class="cycle-wrapper">
+					  
+								<div id="cycle">
+									<div class="slide"><h1>phonk</h1></div>
+								</div>
+						  
+								<div class="cycle-wrapper">
+								  <div id="cycle">
+									  <a target="_blank" href="https://steamcommunity.com/my/profile">😍</a><br><br>							  
+									  
+								  </div>
+								</div>
+						  
+					  </div>
 
 
-    //Тут вместо класса text можете указать свой
-    var el = document.querySelector('.text');
-    var fx = new TextScramble(el);
+				  	<div id="social" class="content cycle-wrapper">
+						<ul class="social-icons">
+							<li><a data-placement="bottom" title="Steam" style="border-radius:13px;" class="fab fa-steam" target="_blank" href="https://steamcommunity.com/id//"><div class="overlay"></div></a></li>
+							<li><a data-placement="bottom" title="My Discord" style="color:#1f6698;border-radius:13px;" class="fab fa-discord" href="javascript:alert('');"><div class="overlay"></div></a></li>
+							<li><a data-placement="bottom" title="Youtube" style="color:#f70202;border-radius:13px;" class="fab fa-youtube" target="_blank" href=""><div class="overlay"></div></a></li>
+							
+							<br><br><br>
+							<a style="color:white;">shit</a><br><br>
+							<li><a data-placement="bottom" title="go to veeta.vet" style="border-radius:13px;" class="fas fa-globe" href="https://"><div class="overlay"></div></a></li>
+						</ul>
+					</div>
+				  
+				  </div>
 
-    var counter = 0;
-    var next = function next() {
-        fx.setText(phrases[counter]).then(function () {
-            //Тут в МИЛИСЕКУНДАХ указываем скорость смены текста после вывода
-            setTimeout(next, 1500);
-        });
-        counter = (counter + 1) % phrases.length;
-    };
 
-    next();
-</script>
+			  </div>
 
-<!-- Script modify by Lantos -->
-<!-- Russification by Lantos -->
-<!-- Беспалевная реклама торрент поисковика https://magnetit.xyz -->
-</body>
+			  <div class="background-content page-enter-animated">
+
+
+				  <div class="level-1">
+                  
+					  <div class="bg-overlay"></div>
+					  <div class="bg-pattern"></div>
+					  <div id="canvas"><canvas class="bg-effect layer" data-depth="0.2"></canvas></div>
+					  
+				  </div>	
+				  
+				  <div class="level-2">
+
+					  <div class="bg-image layer" data-depth="0.04"></div>
+					  <div class="bg-video layer" data-depth="0.04"></div>
+					  <div class="bg-color layer" data-depth="0.04"></div>
+
+				  </div>	
+
+			  </div>
+
+		  </section>
+
+		</div>
+		
+      <script type="text/javascript" src="assets\js\7u7.js"></script>
+
+  </body>
+
 </html>
