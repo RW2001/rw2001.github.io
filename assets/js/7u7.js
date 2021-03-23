@@ -19,7 +19,7 @@ var option_hero_background_youtube_url="https://www.youtube.com/watch?v=QJs1dr0X
 var option_hero_background_youtube_startPoint=0;
 var option_hero_background_youtube_endPoint=160;
 var option_hero_background_youtube_mute="off";
-var option_hero_background_youtube_loop="on";
+var option_hero_background_youtube_loop="off";
 var option_hero_background_youtube_controls="on";
 var option_hero_background_color_custom_color="#6e00ff";
 var option_hero_background_gradient_colorArray= new Array([62,35,255],[60,255,60],[255,35,98],[45,175,230],[255,0,255],[255,128,0]);
