@@ -15,7 +15,7 @@ var option_hero_background_kenburns_path=[{src:"assets/images/1.jpg"},{src:"asse
 var option_hero_background_kenburns_delay=6000;
 var option_hero_background_kenburns_transition="slideDown";
 var option_hero_background_kenburns_transitionDuration=800;
-var option_hero_background_youtube_url="https://www.youtube.com/watch?v=QJs1dr0XNZY";
+var option_hero_background_youtube_url="https://www.youtube.com/watch?v=wcJO-1zr_GY"; //QJs1dr0XNZY
 var option_hero_background_youtube_startPoint=0;
 var option_hero_background_youtube_endPoint=160;
 var option_hero_background_youtube_mute="off";
